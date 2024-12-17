@@ -1,70 +1,108 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🎉 Campaign Website - Final Project in React 🎉
 
-## Available Scripts
+## Project Description
+This is a final project built in React. The website's purpose is to manage a fundraising campaign. There will be two main screens: the **Donations** page and the **Donate** page, which are accessible via a NavBar.
 
-In the project directory, you can run:
+## 🚀 Key Features
 
-### `npm start`
+### 1. Donations Component
+This component displays the campaign image on one side and a summary of the campaign on the other side, including:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The percentage of donations towards the goal 🎯
+- A summary of donations up to the current time 📈
+- The target amount for the campaign 💰
+- The number of donors 🙋‍♀️🙋‍♂️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Example:
 
-### `npm test`
+- **Goal:** $5000
+- **Donations So Far:** $2500 (50%) 💵
+- **Number of Donors:** 100 🧑‍🤝‍🧑
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 2. Donation Component
+This component displays:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The name of the donor 🧑‍💼
+- The dedication message ✨
+- The donation amount 💵
+- Time passed since the donation was made (e.g., "2 hours ago" ⏰)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Donation List Component
+This component will map over an array of donations, rendering each donation using the **Donation Component**. It will receive the appropriate props, such as:
 
-### `npm run eject`
+- Donor Name 🧑‍💼
+- Dedication Message 💌
+- Donation Amount 💵
+- Time Passed ⏳
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Donation Sorting
+Allow sorting of donations by:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Newest/Oldest 🗓️
+- Highest/Lowest donation amount 💸
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 5. Donation Search
+Implement a search feature that allows users to search for donations by:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Donor Name 🧑‍💼
+- Dedication Message ✨
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 6. Donate Page
+The **Donate** page will display a form to allow users to add a donation. The form will collect:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- The donation amount 💵
+- The donor's name 🧑‍💼
+- The dedication message 💌
 
-### Analyzing the Bundle Size
+#### Form Validation:
+Use **react-hook-form** for form validation and handle the collection of valid data. ✅
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Saving Donations:
+Each donation will be saved in an array along with the donation date and time 🗓️.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 7. Theme Switching
+Allow the user to switch the site's theme (light/dark mode) 🌞🌙 by clicking a **"Change Theme"** button. This will update both the background color and text color.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 8. Currency Conversion
+Allow users to switch between **Shekel (₪)** and **Dollar ($)** currencies 💰💱.
 
-### Deployment
+#### Currency API:
+Fetch the current exchange rate from **ExchangeRate API** and update all the screens to reflect the selected currency (either Shekel or Dollar) 💱.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### 9. Currency Change Notification
+When the user changes the currency, show a notification indicating the change for 3 seconds ⏳.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+### 10. Design with MUI
+The site will be styled using **Material-UI (MUI)** for a modern, responsive design 🎨.
+
+---
+
+## 🛠️ Technologies and Tools Used
+
+- **React.js**: For building the user interface and components.
+- **React Router**: For navigation between the Donation and Donate pages.
+- **React Hook Form**: For managing and validating the donation form.
+- **Axios**: For making HTTP requests to fetch the exchange rate API.
+- **Material-UI (MUI)**: For responsive and modern styling of the UI.
+- **Context API**: For theme management (light/dark mode).
+- **ExchangeRate API**: To fetch the exchange rate and convert currencies.
+
