@@ -1,0 +1,32 @@
+.inputs {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+    width: 50vw;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-left: 30vw;
+}
+
+#allDonations {
+    list-style-type: none;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    padding: 10px;
+
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+}
+
+#selectButton {
+    margin-top: 10px;
+    margin-right: 10px;
+}

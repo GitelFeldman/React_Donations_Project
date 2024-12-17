@@ -1,0 +1,23 @@
+
+.routs{
+    margin: 50px;
+  }
+.links{
+    margin-right:20vw;
+    margin-left: 35vw;
+}
+#container{
+  margin: auto;
+  color: rgb(3, 26, 48);
+
+}
+#info{
+  text-align: center;
+  
+}
+.link{
+  height: 7vh;
+}
+.routs{
+  font-size: 20px;
+}

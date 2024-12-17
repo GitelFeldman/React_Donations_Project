@@ -1,0 +1,11 @@
+
+.card{
+    margin: 20px;
+    width:20vw;
+    height: 35vh;
+    text-align: center;
+
+}
+#donateName{
+    font-size: 20px;
+}
