@@ -53,7 +53,7 @@ Allow sorting of donations by:
 ### 5. Donation Search
 Implement a search feature that allows users to search for donations by:
 
-- Donor Name 🧑‍💼
+- Donor Name 
 - Dedication Message 
 
 ---
@@ -66,7 +66,7 @@ The **Donate** page will display a form to allow users to add a donation. The fo
 - The dedication message 
 
 #### Form Validation:
-Use **react-hook-form** for form validation and handle the collection of valid data. ✅
+Use **react-hook-form** for form validation and handle the collection of valid data. 
 
 #### Saving Donations:
 Each donation will be saved in an array along with the donation date and time .
